@@ -1,6 +1,7 @@
 <div class="m-t-3">
   <h1 class="heading">{{ActionType}} User </h1> 
   <mat-card class="main-card">
+    
     <form [formGroup]="userForm" (ngSubmit)="submitForm()">
       <div>
         <mat-form-field appearance="outline" class="form-field">
@@ -48,7 +49,9 @@
         <p class="errmsg" *ngIf="userForm.get('phone')?.invalid && userForm.get('phone')?.value">
           Invalid!</p>
       </div>
-      <div> <button mat-flat-button color="primary" type="submit" [disabled]="!userForm.valid || disabledBtn">Submit</button></div>
+      <div>  <button mat-flat-button class="black-bg" type="button" routerLink="/user-list">Back</button>
+         <button mat-flat-button color="primary" type="submit" [disabled]="!userForm.valid || disabledBtn">Submit</button>
+      </div>
     </form>
   </mat-card>
 </div>

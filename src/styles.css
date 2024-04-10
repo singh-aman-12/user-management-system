@@ -69,3 +69,12 @@ p.errmsg{
     font-size: 1rem;
     font-weight: 700;
   }
+  .mat-icon{
+    cursor: pointer;
+  }
+  button.black-bg{
+    float: left;
+    margin: 0 !important;
+    background: #333 !important;
+    color: #fff !important;
+  }
