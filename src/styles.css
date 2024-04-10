@@ -1,0 +1,71 @@
+.m-t-3{
+    margin-top: 3rem;
+}
+.main-card{
+    width: 40%;
+    text-align: center;
+    padding: 3rem;
+    margin: auto;
+}
+.form-field{
+    width: 100%;
+}
+input.ng-invalid.ng-touched{
+    border: 2px solid red;
+}
+p.errmsg{
+    font-weight:500;
+    color: red;
+    margin-top: -16px;
+    text-align: left;
+}
+.fullwidth{
+    width: 100%;
+}
+.gird-12{
+    width: 80%;
+    margin: auto;
+    padding: 3rem;
+}   
+.heading{
+    text-align: center;
+}
+.add-icon{
+    border: 2px solid;
+    border-radius: 50%;
+    margin: 1rem;
+}
+.item {
+    width: 20%;
+    padding: 1rem;
+    border-bottom: 1px solid #e3d5d5;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .item {
+    width: calc(100% / 6);
+    padding: 1rem;
+    border-bottom: 1px solid #e3d5d5;
+    word-break: break-all;
+  }
+  .p-1{
+    padding: 1rem;
+  }
+  .mat-grid-list .mat-grid-tile-content{
+    background: #eee;
+    margin: .3rem .1rem;
+  }
+  .text-right{
+    text-align: right;
+  }
+  .mat-grid-list .grid-label .mat-grid-tile-content{
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+  }

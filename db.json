@@ -1,0 +1,36 @@
+{
+  "userList": [
+    {
+      "firstName": "Aman ",
+      "lastName": "Singh",
+      "email": "singh2607aman@gmail.com",
+      "address": "Lajpat Nagar New Delhi",
+      "phone": "9911047709",
+      "id": "f10e"
+    },
+    {
+      "id": "808e",
+      "firstName": "Raju",
+      "lastName": "Kamal",
+      "email": "kamal@test.test",
+      "address": "Pune",
+      "phone": "8877665522"
+    },
+    {
+      "id": "beec",
+      "firstName": "Roshan",
+      "lastName": "Kumar",
+      "email": "Roshan@test.test",
+      "address": "Gujarat",
+      "phone": "9922112233"
+    },
+    {
+      "id": "4d1a",
+      "firstName": "Ram",
+      "lastName": "Kumar",
+      "email": "ram@test.test",
+      "address": "Mumbai",
+      "phone": "7766221122"
+    }
+  ]
+}

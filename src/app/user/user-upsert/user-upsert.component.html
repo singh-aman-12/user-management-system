@@ -1,0 +1,54 @@
+<div class="m-t-3">
+  <h1 class="heading">{{ActionType}} User </h1> 
+  <mat-card class="main-card">
+    <form [formGroup]="userForm" (ngSubmit)="submitForm()">
+      <div>
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>First Name</mat-label>
+          <input matInput formControlName="firstName">
+        </mat-form-field>
+        <p class="errmsg" *ngIf="userForm.get('firstName')?.hasError('required') && userForm.get('firstName')?.touched">
+          First Name is required field.</p>
+      </div>
+
+      <div>
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Last Name</mat-label>
+          <input matInput formControlName="lastName">
+        </mat-form-field>
+        <p class="errmsg" *ngIf="userForm.get('lastName')?.hasError('required') && userForm.get('lastName')?.touched">
+          Last Name is required field.</p>
+      </div>
+      <div>
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" formControlName="email">
+        </mat-form-field>
+        <p class="errmsg" *ngIf="userForm.get('email')?.hasError('required') && userForm.get('email')?.touched">
+          Email is required field.</p>
+        <p class="errmsg" *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.value">
+          Invalid!</p>
+      </div>
+      <div>
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Address</mat-label>
+          <input matInput type="text" formControlName="address">
+        </mat-form-field>
+        <p class="errmsg" *ngIf="userForm.get('address')?.hasError('required') && userForm.get('address')?.touched">
+          Address is required field.</p>
+      </div>
+      <div>
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Phone No</mat-label>
+          <input matInput type="text" formControlName="phone">
+        </mat-form-field>
+        <p class="errmsg"
+          *ngIf="userForm.get('phone')?.hasError('required') && userForm.get('phone')?.touched">
+          Phone No is required field.</p>
+        <p class="errmsg" *ngIf="userForm.get('phone')?.invalid && userForm.get('phone')?.value">
+          Invalid!</p>
+      </div>
+      <div> <button mat-flat-button color="primary" type="submit" [disabled]="!userForm.valid || disabledBtn">Submit</button></div>
+    </form>
+  </mat-card>
+</div>
